@@ -3,6 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+
+
+
 
 def sum_stats(dataframe, filename_string, y_variable):
         
@@ -19,13 +26,11 @@ def sum_stats(dataframe, filename_string, y_variable):
               'unique'    ,',',     #
               'mode'      ,',',     #
               'mode_count',',',     #
-              ''          ,',',
               'min'       ,',',     #
               'q1'        ,',',     # 10
               'median'    ,',',     #
               'q3'        ,',',     #
-              'max'       ,',',     # 
-              ''          ,',',        
+              'max'       ,',',     #     
               'mean'      ,',',     #
               'stdev'     ,',',     # 15
               'var'       ,',',     #
@@ -39,7 +44,7 @@ def sum_stats(dataframe, filename_string, y_variable):
         ## VARIABLE ASSIGNMENTS (DETERMINED BY DATATYPE) 
         for (columnName, columnData) in dataframe.iteritems():
                 ## OBJECTS
-            if columnData.dtype == object:                                   
+            if columnData.dtype == object or columnData.dtype == str:                                   
                 col_index += 1                                                        # 0
                 col_name = columnName                                                 #
                 col_dtype = columnData.dtype                                          #
@@ -72,7 +77,7 @@ def sum_stats(dataframe, filename_string, y_variable):
                 col_nulls = columnData.isnull().sum()                                 #
                 col_pct_nulls = round((columnData.isnull().sum())/len(columnData),2)  # 5
                 col_unique = columnData.nunique()                                     # 
-                col_mode = list(columnData.value_counts().items())[0][0]              #
+                col_mode = columnData.mode()[0]                                       #
                 col_mode_count = columnData.value_counts().max()                      #          
                 
                 col_min = columnData.min()                                            #
@@ -86,7 +91,10 @@ def sum_stats(dataframe, filename_string, y_variable):
                 col_var = columnData.var()                                            #
                 col_skew = columnData.skew()                                          #
                 col_kurt = columnData.kurtosis()                                      #
-                col_y_corr = columnData.corr(dataframe[y_variable])                   #
+                try:
+                    col_y_corr = columnData.corr(dataframe[y_variable])               #
+                except:
+                    col_y_corr = ''
 
                 ## PRINT VARIABLES
             print(col_index       ,',',     # 0
@@ -98,13 +106,11 @@ def sum_stats(dataframe, filename_string, y_variable):
                   col_unique      ,',',     #
                   col_mode        ,',',     #
                   col_mode_count  ,',',     #
-                  ''              ,',',
                   col_min         ,',',     #
                   col_q1          ,',',     # 10                
                   col_median      ,',',     #
                   col_q3          ,',',     #                  
-                  col_max         ,',',     #
-                  ''              ,',',                  
+                  col_max         ,',',     #          
                   col_mean        ,',',     #
                   col_stdev       ,',',     # 15
                   col_var         ,',',     #
@@ -114,7 +120,7 @@ def sum_stats(dataframe, filename_string, y_variable):
                   file=f
                   )
 
-
+### VALUE COUNT DISPLAYS
 
 def val_counts(dataframe):
 
@@ -130,20 +136,20 @@ def val_counts(dataframe):
         print('')
 
 
-
 def all_uniques(dataframe):
 
     for (columnName, columnData) in dataframe.iteritems():
 
         print(f'Column Name: {columnName}')
-        print(f'Unique Values: {np.sort(dataframe[columnName].unique())}')
+        print(f'Unique Values: {dataframe[columnName].nunique()}')
+        print(f'Unique Values: {np.sort(columnData.unique())}')
         print('')
-        print('')
+        print(dataframe[columnName].value_counts())
         print('_________________________')
         print('')
         print('')
 
-
+### PLOTS
 
 def rapid_plots(dataframe, y_var,min_corr):
     plt.style.use('seaborn-darkgrid')             # removable or customizable
@@ -163,3 +169,87 @@ def rapid_plots(dataframe, y_var,min_corr):
             pass
                 
     return plot_list
+
+
+### QUICK MODELS
+
+def quickmod_knns(X, y, klist,random_state=42):
+    for k in klist:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
+        sc = StandardScaler()
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        knn = KNeighborsClassifier(n_neighbors=k)
+        knn.fit(Z_train, y_train)
+        print(f'𝑘 = {k}')
+        print(f'Train Accuracy: {knn.score(Z_train, y_train)}')
+        print(f' Test Accuracy: {knn.score(Z_test, y_test)}')
+        print('')
+
+def quickmod_logregsa(X, y, alist, penalty, solver='liblinear', random_state=42):
+    for a in alist:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
+        sc = StandardScaler()
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        logreg = LogisticRegression(penalty=penalty, C=(1/a), solver=solver, random_state=random_state)
+        logreg.fit(Z_train, y_train)
+        print(f'𝛼 = {a}')
+        print(f'𝐶 = {1/a}')
+        print(f'Train Accuracy: {logreg.score(Z_train, y_train)}')
+        print(f' Test Accuracy: {logreg.score(Z_test, y_test)}')
+        print('')
+
+
+def quickmod_logregsa_coefs(X, y, alist, penalty, solver='liblinear', random_state=42):
+    for a in alist:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
+        sc = StandardScaler()
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        logreg = LogisticRegression(penalty=penalty, C=(1/a), solver=solver, random_state=random_state)
+        logreg.fit(Z_train, y_train)
+        coefs = list(zip(X.columns, (list(np.exp(logreg.coef_)[0]))))
+        print(f'𝛼 = {a}')
+        print(f'𝐶 = {1/a}')
+        print(f'Intercept: {logreg.intercept_[0]}')
+        print(f'Coefficients:')
+        for coef in coefs:
+            print(coef)
+        print('')
+
+
+def quickmod_logregsc(X, y, clist, penalty, solver='liblinear', random_state=42):
+    for c in clist:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
+        sc = StandardScaler()
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        logreg = LogisticRegression(penalty=penalty, C=c, solver=solver, random_state=random_state)
+        logreg.fit(Z_train, y_train)
+        print(f'𝐶 = {c}')
+        print(f'Train Accuracy: {logreg.score(Z_train, y_train)}')
+        print(f' Test Accuracy: {logreg.score(Z_test, y_test)}')  
+        print('')
+
+def quickmod_logregsc_coefs(X, y, clist, penalty, solver='liblinear', random_state=42):
+    for c in clist:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
+        sc = StandardScaler()
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        logreg = LogisticRegression(penalty=penalty, C=c, solver=solver, random_state=random_state)
+        logreg.fit(Z_train, y_train)
+        print(f'𝐶 = {c}')
+        print(f'Intercept: {logreg.intercept_[0]}')
+        print(f'Coefficients:')
+        for coef in coefs:
+            print(coef)
+        print('')
+
+
+# print(f'     Intercept: {logreg.intercept_[0]}')
+# print(f'  Coefficients: {logreg.coef_[0]}')
+# print(f'   Predictions: {logreg.predict(X_test)[:10]}')        
+# print(f' Probabilities: {logreg.predict_proba(X_test)[:10]}')      
+
