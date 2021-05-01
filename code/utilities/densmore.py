@@ -8,9 +8,12 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
+import knockknock
+kk_url = "https://hooks.slack.com/services/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"
+kk_channel_name = 'jupyter-notebook'
+kk_users = ['@rileyrobertsond']
 
-
-
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
 def sum_stats(dataframe, filename_string, y_variable):
         
     import sys
@@ -173,7 +176,8 @@ def rapid_plots(dataframe, y_var,min_corr):
 
 ### QUICK MODELS
 
-def quickmod_knns(X, y, klist,random_state=42):
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_knns(X, y, klist,random_state=74):
     for k in klist:
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
         sc = StandardScaler()
@@ -186,7 +190,22 @@ def quickmod_knns(X, y, klist,random_state=42):
         print(f' Test Accuracy: {knn.score(Z_test, y_test)}')
         print('')
 
-def quickmod_logregsa(X, y, alist, penalty, solver='liblinear', random_state=42):
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_logregsa_nlp(X_train, y_train, X_test, y_test, alist, penalty, solver='liblinear', random_state=74):
+    for a in alist:
+        sc = StandardScaler(with_mean=False)
+        Z_train = sc.fit_transform(X_train)
+        Z_test = sc.transform(X_test)
+        logreg = LogisticRegression(penalty=penalty, C=(1/a), solver=solver, random_state=random_state)
+        logreg.fit(Z_train, y_train)
+        print(f'𝛼 = {a}')
+        print(f'𝐶 = {1/a}')
+        print(f'Train Accuracy: {logreg.score(Z_train, y_train)}')
+        print(f' Test Accuracy: {logreg.score(Z_test, y_test)}')
+        print('')
+
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_logregsa(X, y, alist, penalty, solver='liblinear', random_state=74):
     for a in alist:
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
         sc = StandardScaler()
@@ -200,8 +219,8 @@ def quickmod_logregsa(X, y, alist, penalty, solver='liblinear', random_state=42)
         print(f' Test Accuracy: {logreg.score(Z_test, y_test)}')
         print('')
 
-
-def quickmod_logregsa_coefs(X, y, alist, penalty, solver='liblinear', random_state=42):
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_logregsa_coefs(X, y, alist, penalty, solver='liblinear', random_state=74):
     for a in alist:
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
         sc = StandardScaler()
@@ -218,8 +237,8 @@ def quickmod_logregsa_coefs(X, y, alist, penalty, solver='liblinear', random_sta
             print(coef)
         print('')
 
-
-def quickmod_logregsc(X, y, clist, penalty, solver='liblinear', random_state=42):
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_logregsc(X, y, clist, penalty, solver='liblinear', random_state=74):
     for c in clist:
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
         sc = StandardScaler()
@@ -232,7 +251,8 @@ def quickmod_logregsc(X, y, clist, penalty, solver='liblinear', random_state=42)
         print(f' Test Accuracy: {logreg.score(Z_test, y_test)}')  
         print('')
 
-def quickmod_logregsc_coefs(X, y, clist, penalty, solver='liblinear', random_state=42):
+@knockknock.slack_sender(webhook_url=kk_url, channel=kk_channel_name, user_mentions=kk_users)
+def quickmod_logregsc_coefs(X, y, clist, penalty, solver='liblinear', random_state=74):
     for c in clist:
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=random_state)
         sc = StandardScaler()
@@ -253,3 +273,17 @@ def quickmod_logregsc_coefs(X, y, clist, penalty, solver='liblinear', random_sta
 # print(f'   Predictions: {logreg.predict(X_test)[:10]}')        
 # print(f' Probabilities: {logreg.predict_proba(X_test)[:10]}')      
 
+
+
+def make_colormap(colors_list): 
+    from colour import Color
+    from matplotlib.colors import LinearSegmentedColormap
+
+    color_map = LinearSegmentedColormap.from_list( 'my_list', [ Color( c ).rgb for c in colors_list ] )
+    plt.figure( figsize = (15,3))
+    plt.imshow( [list(np.arange(0, len( ramp_colors ) , 0.1)) ] , interpolation='nearest', origin='lower', cmap= color_map )
+    plt.xticks([])
+    plt.yticks([])
+    return color_map
+
+# custom_cmap = make_colormap( ['#ACD701','#69B636','#32A318'] ) 

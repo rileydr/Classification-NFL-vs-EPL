@@ -1,0 +1,404 @@
+﻿Subreddit,Rank,Token,Category,Odds
+EPL,1,Discussion,Tag,9.527237
+EPL,2,premier,League Name,5.964373
+EPL,3,Question,Tag,5.710886
+EPL,4,liverpool,Team Name,2.853200
+EPL,5,pl,League Name,2.770702
+EPL,6,club,Vocab,2.330990
+EPL,7,league,Vocab,2.291374
+EPL,8,[flair] Premier League,Tag,2.274725
+EPL,9,arsenal,Team Name,2.154184
+EPL,10,epl,League Name,2.131302
+EPL,11,chelsea,Team Name,2.081810
+EPL,12,var,Vocab - Acc,1.841295
+EPL,13,united,Team Name,1.702915
+EPL,14,match,Vocab,1.672153
+EPL,15,poll,Error,1.655469
+EPL,16,spurs,Team Name,1.641890
+EPL,17,tottenham,Team Name,1.629748
+EPL,18,city,Team Name,1.571513
+EPL,19,english,League Name,1.532463
+EPL,20,News,Tag,1.469784
+EPL,21,clubs,Vocab,1.449543
+EPL,22,everton,Team Name,1.441820
+EPL,23,goals,Vocab,1.428311
+EPL,24,[flair] Manchester United,Tag,1.406905
+EPL,25,fixtures,Vocab,1.401078
+EPL,26,goal,Vocab,1.381885
+EPL,27,matches,Vocab,1.380643
+EPL,28,manchester,Team Name,1.365761
+EPL,29,[flair] Liverpool,Tag,1.365744
+EPL,30,wolves,Team Name,1.340395
+EPL,31,prem,League Name,1.337550
+EPL,32,cup,Vocab,1.331596
+EPL,33,southampton,Team Name,1.320159
+EPL,34,mourinho,Player Name,1.315670
+EPL,35,newcastle,Team Name,1.315429
+EPL,36,transfer,Vocab,1.290049
+EPL,37,manager,Vocab,1.280512
+EPL,38,london,Location,1.277692
+EPL,39,leicester,Team Name,1.272708
+EPL,40,brighton,Team Name,1.248256
+EPL,41,palace,Team Name,1.247207
+EPL,42,offside,Vocab,1.246749
+EPL,43,madrid,International Soccer,1.244287
+EPL,44,villa,Player Name,1.239036
+EPL,45,american,American Soccer,1.238473
+EPL,46,hello,Ordinary,1.236565
+EPL,47,pogba,Player Name,1.227556
+EPL,48,today,Ordinary,1.219523
+EPL,49,sterling,Player Name,1.217903
+EPL,50,nbc,Broadcast,1.215974
+EPL,51,salah,Player Name,1.215363
+EPL,52,world,International Soccer,1.214193
+EPL,53,[flair] Tottenham Hotspur,Team Name,1.209385
+EPL,54,bissaka,Player Name,1.206445
+EPL,55,pitch,Vocab,1.206409
+EPL,56,thanks,Ordinary,1.204813
+EPL,57,soccer,Vocab,1.203586
+EPL,58,streams,Broadcast,1.203070
+EPL,59,x200b,Error,1.201184
+EPL,60,relegation,Vocab,1.199226
+EPL,61,premierleague,League Name,1.196975
+EPL,62,leeds,Team Name,1.196412
+EPL,63,[flair] Chelsea,Team Name,1.195304
+EPL,64,join,Ordinary,1.191963
+EPL,65,sky,Ordinary,1.185141
+EPL,66,burnley,Team Name,1.184474
+EPL,67,ham,Team Name,1.183534
+EPL,68,finish,Vocab,1.174342
+EPL,69,[flair] Manchester City,Team Name,1.174160
+EPL,70,stream,Broadcast,1.173772
+EPL,71,nbcsn,Broadcast,1.168381
+EPL,72,title,Vocab,1.167137
+EPL,73,watford,Team Name,1.166319
+EPL,74,bruyne,Player Name,1.165636
+EPL,75,fantasy,Vocab,1.164696
+EPL,76,signings,Vocab,1.162007
+EPL,77,[flair] Leeds United,Team Name,1.161203
+EPL,78,podcasts,Vocab,1.159570
+EPL,79,ozil,Player Name,1.158943
+EPL,80,subtitles,Interesting,1.158394
+EPL,81,xi,Vocab,1.157712
+EPL,82,peacock,Broadcast,1.155133
+EPL,83,squad,Vocab,1.154786
+EPL,84,aubameyang,Player Name,1.154254
+EPL,85,aguero,Player Name,1.153232
+EPL,86,champions,Vocab,1.151460
+EPL,87,subs,Vocab,1.143607
+EPL,88,assists,Vocab,1.143446
+EPL,89,kit,Vocab,1.142538
+EPL,90,bournemouth,Team Name,1.136104
+EPL,91,send,Vocab,1.135771
+EPL,92,buy,Vocab,1.135762
+EPL,93,Premier League,League Name,1.130787
+EPL,94,outside,Ordinary,1.130148
+EPL,95,gerrard,Player Name,1.129348
+EPL,96,mls,American Soccer,1.128659
+EPL,97,table,Vocab,1.128656
+EPL,98,neutrals,Vocab,1.128067
+EPL,99,[flair] West Bromwich Albion,Team Name,1.126962
+EPL,100,england,Location,1.126631
+EPL,101,tickets,Vocab,1.124412
+EPL,102,predictions,Vocab,1.122671
+EPL,103,cheers,Vocab,1.120964
+EPL,104,transfers,Vocab,1.120693
+EPL,105,lloris,Player Name,1.120680
+EPL,106,hi,Ordinary,1.120573
+EPL,107,relegated,Vocab,1.120475
+EPL,108,difficult,Ordinary,1.119296
+EPL,109,support,Ordinary,1.119050
+EPL,110,choosing,Ordinary,1.116746
+EPL,111,surely,Ordinary,1.116633
+EPL,112,british,Interesting,1.115597
+EPL,113,uefa,International Soccer,1.114509
+EPL,114,Manchester United,Team Name,1.114419
+EPL,115,:wlv: Wolverhampton Wanderers,Team Name,1.114107
+EPL,116,promoted,Vocab,1.113453
+EPL,117,fifa,International Soccer,1.113376
+EPL,118,decisions,Ordinary,1.113375
+EPL,119,leicesters,Team Name,1.112522
+EPL,120,link,Ordinary,1.112459
+EPL,121,does,Ordinary,1.110960
+EPL,122,yank,American Soccer,1.110743
+EPL,123,arsenals,Team Name,1.110473
+EPL,124,norwich,Team Name,1.108816
+EPL,125,onwards,Interesting,1.106141
+EPL,126,mins,Interesting,1.105851
+EPL,127,app,Ordinary,1.105180
+EPL,128,kieran,Player Name,1.105093
+EPL,129,xhaka,Player Name,1.103105
+EPL,130,date,Ordinary,1.103041
+EPL,131,silva,Player Name,1.102852
+EPL,132,striker,Vocab,1.102810
+EPL,133,hart,Player Name,1.102681
+EPL,134,millwall,Team Name,1.102567
+EPL,135,resurrect,Interesting,1.101650
+EPL,136,kdb,Player Name,1.100522
+EPL,137,shirt,Ordinary,1.099831
+EPL,138,fpl,Fantasy,1.099153
+EPL,139,sunderland,Team Name,1.098748
+EPL,140,derby,Vocab,1.098247
+EPL,141,took,Ordinary,1.096892
+EPL,142,quiz,Interesting,1.096709
+EPL,143,index,Interesting,1.096364
+EPL,144,van,Unsure,1.095358
+EPL,145,virgil,Player Name,1.094849
+EPL,146,pukki,Player Name,1.094848
+EPL,147,view,Ordinary,1.093789
+EPL,148,intro,Ordinary,1.093523
+EPL,149,lfc,Team Name,1.093131
+EPL,150,student,Ordinary,1.093033
+EPL,151,hey,Ordinary,1.092991
+EPL,152,aston,Team Name,1.092868
+EPL,153,subjectivity,Interesting,1.091592
+EPL,154,ref,Error,1.091153
+EPL,155,:shu: Sheffield United,Team Name,1.090916
+EPL,156,huddersfield,Team Name,1.090419
+EPL,157,video,Ordinary,1.090263
+EPL,158,hiatus,Interesting,1.089563
+EPL,159,wages,Interesting,1.089178
+EPL,160,soundcloud,Ordinary,1.088905
+EPL,161,lg,Unsure,1.088327
+EPL,162,mooted,Interesting,1.088117
+EPL,163,gk,Vocab - Acc,1.088111
+EPL,164,sarri,Manger Name,1.087481
+EPL,165,premiership,League Name,1.087356
+EPL,166,footy,Vocab,1.087143
+EPL,167,hazard,Interesting,1.086499
+EPL,168,labelled,Interesting,1.084953
+EPL,169,3s,Unsure,1.084533
+EPL,170,bragging,Ordinary,1.084230
+EPL,171,wasting,Vocab,1.083911
+EPL,172,america,American Soccer,1.083801
+EPL,173,charge,Interesting,1.083548
+EPL,174,restriction,Ordinary,1.083369
+EPL,175,73rd,Interesting,1.083184
+EPL,176,online,Ordinary,1.082673
+EPL,177,lads,Interesting,1.082192
+EPL,178,mod,Unsure,1.081987
+EPL,179,accessible,Interesting,1.081913
+EPL,180,wisdom,Interesting,1.081607
+EPL,181,wondering,Ordinary,1.081561
+EPL,182,pep,Manager Name,1.081450
+EPL,183,referee,Vocab,1.081429
+EPL,184,fa,International Soccer,1.081297
+EPL,185,gea,Player Name,1.080601
+EPL,186,reviewing,Shared,1.080520
+EPL,187,euros,Unique,1.080518
+EPL,188,commentator,Shared,1.079653
+EPL,189,tipping,Interesting,1.079639
+EPL,190,bbc,Unique,1.079509
+EPL,191,handball,Vocab,1.079378
+EPL,192,foil,Interesting,1.079027
+EPL,193,utd,Team Name,1.078829
+EPL,194,goalless,Vocab,1.078774
+EPL,195,welcoming,Interesting,1.078750
+EPL,196,quality,Interesting,1.078415
+EPL,197,departures,Vocab,1.075724
+EPL,198,mentalitys,Interesting,1.075696
+EPL,199,opposition,Vocab,1.075381
+EPL,200,jorginho,Player Name,1.075324
+NFL,100,went,Ordinary,0.887279
+NFL,99,redskins,Team Name,0.887003
+NFL,98,jackson,Player Name,0.886603
+NFL,97,rb,Vocab - Acc,0.886378
+NFL,96,cbs,Broadcast,0.885308
+NFL,95,dan,Unsure,0.885208
+NFL,94,hof,Vocab - Acc,0.885149
+NFL,93,career,Ordinary,0.883793
+NFL,92,defensive,Vocab,0.883022
+NFL,91,bad,Ordinary,0.882232
+NFL,90,cut,Vocab,0.881299
+NFL,89,coverage,Vocab,0.880600
+NFL,88,helmet,Vocab,0.879913
+NFL,87,camp,Vocab,0.879584
+NFL,86,ab,Player Name,0.879153
+NFL,85,record,Vocab,0.879078
+NFL,84,example,Ordinary,0.878398
+NFL,83,raiders,Team Name,0.877764
+NFL,82,organization,Vocab,0.876616
+NFL,81,texans,Team Name,0.875964
+NFL,80,te,Vocab - Acc,0.875945
+NFL,79,pats,Team Name,0.873918
+NFL,78,smith,Player Name,0.873245
+NFL,77,sb,Vocab - Acc,0.872748
+NFL,76,calls,Vocab,0.872669
+NFL,75,picks,Vocab,0.872544
+NFL,74,decided,Ordinary,0.872295
+NFL,73,hall,Vocab,0.870650
+NFL,72,lions,Team Name,0.870203
+NFL,71,contract,Vocab,0.869072
+NFL,70,coach,Vocab,0.866043
+NFL,69,cardinals,Team Name,0.863955
+NFL,68,cap,Vocab,0.863694
+NFL,67,plays,Vocab,0.862848
+NFL,66,broncos,Team Name,0.861406
+NFL,65,dude,Vocab,0.861166
+NFL,64,receiver,Vocab,0.860556
+NFL,63,sacks,Vocab,0.860440
+NFL,62,falcons,Team Name,0.859973
+NFL,61,year,Ordinary,0.859388
+NFL,60,chargers,Team Name,0.857366
+NFL,59,defense,Vocab,0.856393
+NFL,58,numbers,Vocab,0.856211
+NFL,57,football,Vocab,0.855693
+NFL,56,packers,Team Name,0.854285
+NFL,55,night,Ordinary,0.853389
+NFL,54,12,Number,0.853288
+NFL,53,rules,Vocab,0.848480
+NFL,52,bears,Team Name,0.847780
+NFL,51,williams,Player Name,0.847163
+NFL,50,wr,Vocab - Acc,0.847066
+NFL,49,rams,Team Name,0.846504
+NFL,48,steelers,Team Name,0.846241
+NFL,47,16,Number,0.845399
+NFL,46,roster,Vocab,0.845317
+NFL,45,bay,Team Name,0.844984
+NFL,44,chiefs,Team Name,0.844952
+NFL,43,offseason,Vocab,0.843461
+NFL,42,giants,Team Name,0.842783
+NFL,41,td,Vocab - Acc,0.842231
+NFL,40,like,Ordinary,0.841602
+NFL,39,years,Ordinary,0.841096
+NFL,38,pass,Vocab,0.840075
+NFL,37,trade,Vocab,0.837678
+NFL,36,yard,Vocab,0.835786
+NFL,35,brown,Player Name,0.834614
+NFL,34,nfc,Vocab - Acc,0.834332
+NFL,33,guy,Vocab,0.830642
+NFL,32,practice,Vocab,0.830633
+NFL,31,pff,Website,0.829708
+NFL,30,qbs,Vocab - Acc,0.824269
+NFL,29,running,Vocab,0.823712
+NFL,28,superbowl,Vocab,0.821414
+NFL,27,conference,Vocab,0.816981
+NFL,26,rodgers,Player Name,0.809480
+NFL,25,playoffs,Vocab,0.804477
+NFL,24,coaches,Vocab,0.797942
+NFL,23,rookie,Vocab,0.797902
+NFL,22,college,Vocab,0.793197
+NFL,21,division,Vocab,0.786417
+NFL,20,offensive,Vocab,0.774591
+NFL,19,jets,Team Name,0.774004
+NFL,18,quarterback,Vocab,0.771553
+NFL,17,ravens,Team Name,0.768696
+NFL,16,browns,Team Name,0.753733
+NFL,15,eagles,Team Name,0.752498
+NFL,14,franchise,Vocab,0.746014
+NFL,13,cowboys,Team Name,0.734533
+NFL,12,none,Error,0.701803
+NFL,11,playoff,Vocab,0.693764
+NFL,10,brady,Player Name,0.682665
+NFL,9,yards,Vocab,0.673035
+NFL,8,offense,Vocab,0.656222
+NFL,7,patriots,Team Name,0.652213
+NFL,6,field,Vocab,0.635830
+NFL,5,draft,Vocab,0.583148
+NFL,4,bowl,Vocab,0.573088
+NFL,3,qb,Vocab - Acc,0.485958
+NFL,2,comments,Tag,0.406264
+NFL,1,nfl,League Name,0.103523
+NFL,101,im,Ordinary,0.88752
+NFL,102,critical,Interesting,0.887848
+NFL,103,mahomes,Player Name,0.888258
+NFL,104,super,Vocab,0.888683
+NFL,105,brees,Player Name,0.889158
+NFL,106,49ers,Team Name,0.889923
+NFL,107,josh,Player Name,0.890346
+NFL,108,ass,Profanity,0.890745
+NFL,109,saints,Team Name,0.891272
+NFL,110,touchdown,Vocab,0.892612
+NFL,111,tds,Vocab - Acc,0.89263
+NFL,112,receivers,Vocab,0.8951
+NFL,113,idea,Ordinary,0.895435
+NFL,114,week,Ordinary,0.895454
+NFL,115,pittsburgh,Team Name,0.896281
+NFL,116,instead,Ordinary,0.896692
+NFL,117,russell,Player Name,0.898033
+NFL,118,vikings,Team Name,0.901012
+NFL,119,popular,Interesting,0.90145
+NFL,120,special,Ordinary,0.901557
+NFL,121,speed,Ordinary,0.90171
+NFL,122,miami,Team Name,0.901932
+NFL,123,told,Ordinary,0.903079
+NFL,124,fact,Ordinary,0.903098
+NFL,125,michael,Player Name,0.903507
+NFL,126,list,Ordinary,0.903806
+NFL,127,inside,Ordinary,0.903869
+NFL,128,bunch,Ordinary,0.904485
+NFL,129,line,Vocab,0.905658
+NFL,130,traded,Vocab,0.906042
+NFL,131,salary,Shared,0.90647
+NFL,132,titans,Team Name,0.907718
+NFL,133,madden,Player Name,0.907722
+NFL,134,late,Ordinary,0.908017
+NFL,135,hits,Vocab,0.908035
+NFL,136,experts,Interesting,0.908158
+NFL,137,bills,Team Name,0.908264
+NFL,138,state,Ordinary,0.909848
+NFL,139,concepts,Ordinary,0.909982
+NFL,140,jalen,Player Name,0.911092
+NFL,141,term,Ordinary,0.911366
+NFL,142,game,Vocab,0.911701
+NFL,143,jerry,Player Name,0.911743
+NFL,144,timing,Ordinary,0.912044
+NFL,145,talk,Ordinary,0.912247
+NFL,146,san,Unsure,0.912511
+NFL,147,said,Ordinary,0.912641
+NFL,148,joe,Player Name,0.912787
+NFL,149,johnson,Player Name,0.913058
+NFL,150,bell,Player Name,0.9131
+NFL,151,punt,Vocab,0.913162
+NFL,152,seahawks,Team Name,0.913633
+NFL,153,divisional,Vocab,0.914079
+NFL,154,clock,Vocab - Shared,0.914708
+NFL,155,food,Ordinary,0.91493
+NFL,156,locked,Ordinary,0.914933
+NFL,157,extra,Ordinary,0.915518
+NFL,158,recommend,Interesting,0.915586
+NFL,159,safety,Vocab,0.915808
+NFL,160,round,Vocab,0.915829
+NFL,161,able,Ordinary,0.91597
+NFL,162,jacksonville,Team Name,0.91654
+NFL,163,edit,Ordinary,0.91658
+NFL,164,high,Ordinary,0.916657
+NFL,165,dolphins,Team Name,0.916733
+NFL,166,comparison,Ordinary,0.916893
+NFL,167,celtics,NBA,0.917563
+NFL,168,afc,Vocab,0.917596
+NFL,169,enjoying,Interesting,0.917872
+NFL,170,apologize,Interesting,0.919101
+NFL,171,agent,Vocab,0.919144
+NFL,172,tom,Player Name,0.91929
+NFL,173,quarter,Vocab,0.919683
+NFL,174,favorite,Ordinary,0.920216
+NFL,175,mnf,Broadcast,0.920311
+NFL,176,flag,Interesting,0.920585
+NFL,177,mexico,Location,0.920864
+NFL,178,monday,Interesting,0.920882
+NFL,179,having,Ordinary,0.921909
+NFL,180,progresses,Ordinary,0.922528
+NFL,181,combine,Vocab,0.922563
+NFL,182,attempts,Vocab,0.922996
+NFL,183,dollars,Unique,0.923483
+NFL,184,human,Interesting,0.92354
+NFL,185,mike,Player Name,0.923686
+NFL,186,type,Ordinary,0.923955
+NFL,187,linemen,Vocab,0.924214
+NFL,188,threw,Vocab,0.924364
+NFL,189,dallas,Team Name,0.924394
+NFL,190,watson,Player Name,0.924552
+NFL,191,buffalo,Team Name,0.924655
+NFL,192,colts,Team Name,0.925148
+NFL,193,washington,Team Name,0.925198
+NFL,194,preseason,Vocab,0.925559
+NFL,195,functionality,Interesting,0.92698
+NFL,196,throw,Vocab,0.92699
+NFL,197,broken,Ordinary,0.927498
+NFL,198,ps4,Pop Culture,0.927524
+NFL,199,2016,Number,0.928308
+NFL,200,coin,Interesting,0.928412
+,,,,
+,,,,
+,,,,
