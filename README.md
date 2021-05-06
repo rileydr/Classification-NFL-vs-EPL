@@ -83,7 +83,7 @@ With the goal in mind of understanding the language of these two communities, I 
 
 I then moved to a Random Forest model, which would also be able to provide me with insights into individual words being used in the model through feature importances - a measure of relevance between each word and the model.
 
-The two models ultimately performed extremely well and will be well suited to classify posts going forward and fulfils OverArmors 2nd request.
+Because OverArmor asked for modesl that, above all, would be able to make correct predictions, I decided to use Accuracy as my evaluation metric. Both models performed extremely well and will be well suited to classify posts going forward and fulfils OverArmors 2nd request.
 
 
 
