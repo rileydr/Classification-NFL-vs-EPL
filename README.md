@@ -14,7 +14,7 @@ One retailer hoping to capitalize on these advertizing goldmines is **OverArmor*
 </br>
 
 <div style='text-align:center'>
-<img src='../other_assets/over_armor_logo.png' width='200'>
+<img src='https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/other_assets/over_armor_logo.png' width='200'>
 </div>
 
 </br></br>
