@@ -77,7 +77,7 @@ So I provided OverArmor a merged list of the top 200 words from each subreddit t
 
 ## Modeling
 
-[Notebook 04](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/code/04-Modeling.ipynb)
+[Notebook 04](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/code/04-PreProcessing_and_Modeling.ipynb)
 
 With the goal in mind of understanding the language of these two communities, I chose to start with a logistic regression model. Because it’s coefficients can be exponentiated and interpreted, it would serve as a good first model from which I knew I could pull meaningful insights about each word’s impact on the likelihood of a post's classification.
 
@@ -95,7 +95,7 @@ In accordance with the three objectives given to me by OverArmor, I completed th
 
 1. Collected and cleaned data | Link: [Clean Data Folder](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/data/2_clean)
 
-2. 2 models that could predict posts’ origin subreddit with high accuracy | Link: [Modeling Notebook](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/code/04-Modeling.ipynb)
+2. 2 models that could predict posts’ origin subreddit with high accuracy | Link: [Modeling Notebook](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/code/04-PreProcessing_and_Modeling.ipynb)
 
 3. Provided lists of words that could give them insight for marketing decisions | Link: [Data Output Folder](https://git.generalassemb.ly/rileyrobertson/project_3/blob/main/data/3_output)
 
